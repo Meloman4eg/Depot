@@ -1,0 +1,20 @@
+%h1 Список товаров
+
+%table.table.table-striped.table-hover
+  - @products.each do |product|
+    %tr
+      %td= image_tag product.image_url, class: 'list_image'
+      %td.list_description
+        %dl
+          %dt
+            = product.title
+          %dd
+            = truncate strip_tags(product.description), length: 120
+      %td.list_actions
+        = link_to 'Просмотр', product
+        = link_to 'Редактировать', edit_product_path(product)
+        = link_to 'Удалить', product, :method => :delete, :data => { :confirm => 'Вы уверены?' }
+
+%br
+
+= link_to 'Добавить товар', new_product_path,  class: 'btn btn-info btn-large'
