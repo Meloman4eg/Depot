@@ -1,0 +1,7 @@
+-if notice
+  %p.bg-danger= notice
+
+%h2 Корзина покупателя
+%ul
+  - @cart.line_items.each do |item|
+    %li= item.product.title

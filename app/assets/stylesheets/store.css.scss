@@ -7,14 +7,14 @@
     margin-left: 0.5em;
     padding-bottom: 0.5em;
     font: 150% sans-serif;
-    border-bottom: 3px dotted #77d;
+    border-bottom: 2px dotted #77d;
   }
 
   .entry{
     overflow: auto;
     margin-top: 1em;
-    border-bottom: 3px dotted #77d;
-    min-height: 120px;
+    border-bottom: 2px dotted #77d;
+    min-height: 140px;
 
     img{
       width: 100px;
@@ -41,6 +41,10 @@
       color: #44a;
       font-weight: bold;
       margin-right: 3em;
+    }
+
+    form, div{
+      display: inline;
     }
   }
 }
