@@ -40,5 +40,5 @@ gem 'spring',       group: :development
 
 gem 'haml-rails'
 gem 'simple_form'
-gem 'twitter-bootstrap-rails'
+gem 'twitter-bootstrap-rails', github: 'seyhunak/twitter-bootstrap-rails', branch: 'bootstrap3'
 gem 'font-awesome-rails'
